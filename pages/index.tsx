@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 import Head from "next/head";
 
 type Props = {};
@@ -13,9 +14,9 @@ export default function Home() {
         <link rel="icon" href="/butterfly.svg" />
       </Head>
       {/* Header */}
-      <Header /> <section>Hero</section>
+      <Header />
       {/* Hero */}
-      <section>Hero</section>
+      <Hero />
       {/* About */}
       <section>About</section>
       {/* News & Events */}

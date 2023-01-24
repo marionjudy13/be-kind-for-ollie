@@ -1,4 +1,7 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
+/** @type {import('tailwindcss').Config} \*/
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -6,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-montserrat)", ...fontFamily.sans],
+      },
       colors: {
         darkGreen: "#21362C",
         lightGreen: "#415F51",
