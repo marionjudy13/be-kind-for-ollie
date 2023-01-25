@@ -1,23 +1,23 @@
 import Link from "next/link";
 import React from "react";
+import { BilFacebookCircle } from "@meronex/icons/bi";
+import MobileNav from "./MobileNav";
+import DesktopNav from "./DesktopNav";
 
 type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="absolute w-full px-20 py-10 max-w-5xl m-auto text-mint flex justify-between items-center uppercase text-xs font-sans font-semibold">
-      <nav>
-        <ul className="flex ">
-          <li className="pr-16">About</li>
-          <li className="pr-16">News & Events</li>
-          <li>Donate</li>
-        </ul>
-      </nav>
+    <header className="absolute w-full p-5 sm:px-10 md:px-20 md:py-10 max-w-5xl m-auto text-mint flex justify-between items-center uppercase text-xs font-sans font-semibold">
+      <MobileNav />
+      <DesktopNav />
       <div className="flex items-center">
-        <a href="/">Facebook</a>
+        <a href="https://www.facebook.com/profile.php?id=100072203140159">
+          <BilFacebookCircle size="3em" />
+        </a>
         <Link
           href="#contact"
-          className="block bg-mint text-darkGreen px-4 py-2"
+          className="block bg-mint text-darkGreen px-4 py-2.5 rounded-xl ml-5"
         >
           <span>Contact</span>
         </Link>
