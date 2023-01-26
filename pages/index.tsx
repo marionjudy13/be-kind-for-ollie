@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 import Head from "next/head";
 
 type Props = {};
@@ -18,7 +19,7 @@ export default function Home() {
       {/* Hero */}
       <Hero />
       {/* About */}
-      <section>About</section>
+      <About />
       {/* News & Events */}
       <section>News & Events</section>
       {/* How to Donate */}

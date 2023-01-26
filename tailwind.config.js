@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-montserrat)", ...fontFamily.sans],
+        serif: ["var(--font-playfair_display)", ...fontFamily.serif],
       },
       colors: {
         darkGreen: "#21362C",
