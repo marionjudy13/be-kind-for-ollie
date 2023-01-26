@@ -4,14 +4,14 @@ type Props = {};
 
 export default function Hero({}: Props) {
   return (
-    <section className="bg-darkGreen globalXPadding pt-32">
+    <section className="bg-darkGreen paddingX pt-32">
       <div className="max-w-md m-auto mb-16">
         <img
           src="/logo.svg"
           alt="Be Kind for Ollie Logo"
-          className="max-w-[350px] m-auto mb-7"
+          className="max-w-[400px] m-auto mb-7"
         />
-        <h1 className="font-serif text-5xl leading-tight text-center text-white mb-6">
+        <h1 className="font-serif text-5xl leading-tight text-center text-white mb-7">
           Be Kind for Ollie Foundation
         </h1>
         <p className="text-center text-xl text-mint leading-normal">

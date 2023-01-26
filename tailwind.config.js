@@ -17,6 +17,7 @@ module.exports = {
         darkGreen: "#21362C",
         lightGreen: "#415F51",
         mint: "#C8E4D7",
+        paleGreen: "#F7FBF9",
       },
     },
   },
