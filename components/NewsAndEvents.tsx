@@ -18,7 +18,7 @@ export default function NewsAndEvents({}: Props) {
           />
           <h3 className="text-xl text-darkGreen font-bold mb-2">Event Title</h3>
           <p className="text-lightGreen font-semibold mb-1">
-            Event Date & Time
+            Event Date &amp; Time
           </p>
           <span className="text-lightGreen font-semibold">See More &gt;</span>
         </div>
