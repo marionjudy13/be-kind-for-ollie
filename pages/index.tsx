@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Head from "next/head";
 import NewsAndEvents from "@/components/NewsAndEvents";
+import Donate from "@/components/Donate";
 
 type Props = {};
 
@@ -24,7 +25,7 @@ export default function Home() {
       {/* News & Events */}
       <NewsAndEvents />
       {/* How to Donate */}
-      <section>How to Donate</section>
+      <Donate />
       {/* Contact Us */}
       <section>Contact Us</section>
       {/* Footer */}
