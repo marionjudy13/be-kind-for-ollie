@@ -8,22 +8,22 @@
   }
 
   .bottomPadding {
-    @apply pb-24;
+    @apply pb-28;
   }
   .topPadding {
-    @apply pt-24;
+    @apply pt-28;
   }
 
   .paddingY {
-    @apply py-24;
+    @apply py-28;
   }
 
   .padding {
-    @apply px-10 md:px-20 py-24;
+    @apply px-10  py-28 md:px-20;
   }
 
   .h2 {
-    @apply text-4xl text-darkGreen font-serif text-center leading-tight mb-8;
+    @apply text-3xl text-darkGreen font-serif text-center leading-tight mb-6;
   }
 
   .p {

@@ -10,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-montserrat)", ...fontFamily.sans],
-        serif: ["var(--font-playfair_display)", ...fontFamily.serif],
+        sans: ["'Montserrat', 'sans-serif'"],
+        serif: ["'Playfair Display', 'serif'"],
       },
       colors: {
         darkGreen: "#21362C",

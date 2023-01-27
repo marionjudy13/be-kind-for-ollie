@@ -18,7 +18,7 @@ export default function Header({}: Props) {
           </a>
           <Link
             href="#contact"
-            className="block bg-mint text-darkGreen px-4 py-2.5 rounded-xl ml-5"
+            className="block bg-mint text-darkGreen font-bold text-sm px-3 py-2 rounded-xl ml-5"
           >
             <span>Contact</span>
           </Link>

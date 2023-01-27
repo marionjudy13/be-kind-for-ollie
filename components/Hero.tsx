@@ -11,7 +11,7 @@ export default function Hero({}: Props) {
           alt="Be Kind for Ollie Logo"
           className="max-w-[400px] m-auto mb-7"
         />
-        <h1 className="font-serif text-5xl leading-tight text-center text-white mb-7">
+        <h1 className="font-serif text-4xl leading-tight text-center text-white mb-7">
           Be Kind for Ollie Foundation
         </h1>
         <p className="text-center text-xl text-mint leading-normal">
