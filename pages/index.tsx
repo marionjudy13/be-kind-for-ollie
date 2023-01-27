@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Head from "next/head";
 import NewsAndEvents from "@/components/NewsAndEvents";
 import Donate from "@/components/Donate";
+import Contact from "@/components/Contact";
 
 type Props = {};
 
@@ -27,7 +28,7 @@ export default function Home() {
       {/* How to Donate */}
       <Donate />
       {/* Contact Us */}
-      <section>Contact Us</section>
+      <Contact />
       {/* Footer */}
       <section>Footer</section>
     </>
