@@ -5,7 +5,7 @@ import Head from "next/head";
 import NewsAndEvents from "@/components/NewsAndEvents";
 import Donate from "@/components/Donate";
 import Contact from "@/components/Contact";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
 
 type Props = {};
 
