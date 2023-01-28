@@ -4,7 +4,7 @@ type Props = {};
 
 export default function Donate({}: Props) {
   return (
-    <section className="bg-lightGreen padding">
+    <section className="bg-lightGreen padding" id="donate">
       <h2 className="h2 text-mint">How to Donate</h2>
       <p className="p text-white mb-12">
         {

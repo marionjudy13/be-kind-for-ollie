@@ -4,7 +4,7 @@ type Props = {};
 
 export default function NewsAndEvents({}: Props) {
   return (
-    <section className="bg-paleGreen padding">
+    <section className="bg-paleGreen padding" id="newsAndEvents">
       <h2 className="h2 text-darkGreen">News &amp; Events</h2>
       <div className="flex flex-wrap justify-center">
         <div className="flex flex-col w-full mb-12 relative">

@@ -16,7 +16,10 @@ export default function Header({}: Props) {
           <a href="https://www.facebook.com/profile.php?id=100072203140159">
             <BilFacebookCircle size="3em" />
           </a>
-          <Link href="#contact" className="block button ml-5">
+          <Link
+            href="#contact"
+            className="block button ml-4 font-sans font-bold"
+          >
             <span>Contact</span>
           </Link>
         </div>

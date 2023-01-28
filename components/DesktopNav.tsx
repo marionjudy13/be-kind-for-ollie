@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -7,9 +8,15 @@ function DesktopNav({}: Props) {
     <>
       <nav className="hidden sm:block">
         <ul className="flex">
-          <li className="pr-16">About</li>
-          <li className="pr-16">News & Events</li>
-          <li>Donate</li>
+          <li className="pr-16">
+            <Link href="#about">About</Link>
+          </li>
+          <li className="pr-16">
+            <Link href="#newsAndEvents">News & Events</Link>
+          </li>
+          <li>
+            <Link href="#donate">Donate</Link>
+          </li>
         </ul>
       </nav>
     </>

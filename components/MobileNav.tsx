@@ -21,7 +21,7 @@ export default function MobileNav({}: Props) {
       <nav
         className={`${
           menuOpen ? "flex" : "hidden"
-        } flex-col absolute top-0 left-0 w-full bg-mint text-darkGreen`}
+        } flex-col absolute top-0 left-0 w-full bg-mint text-darkGreen shadow-lg shadow-black`}
       >
         <div className="flex justify-between p-5">
           <MdcWindowClose size="3em" onClick={toggleMenu} />
@@ -31,18 +31,22 @@ export default function MobileNav({}: Props) {
             </a>
             <Link
               href="#contact"
-              className="block bg-darkGreen text-mint px-4 py-2.5 rounded-xl ml-5"
+              className="block bg-darkGreen text-mint button ml-4 font-sans font-bold"
             >
               <span>Contact</span>
             </Link>
           </div>
         </div>
-        <ul className="flex flex-col items-center w-full text-center">
-          <li className="p-5 w-full border border-x-0">About</li>
-          <li className="p-5 w-full border border-t-0 border-x-0">
-            News & Events
+        <ul className="flex flex-col items-center w-full text-center text-base font-bold">
+          <li className="p-8 w-full border border-x-0">
+            <Link href="#about">About</Link>
           </li>
-          <li className="p-5 w-full border border-t-0 border-x-0">Donate</li>
+          <li className="p-8 w-full border border-t-0 border-x-0">
+            <Link href="#newsAndEvents">News & Events</Link>
+          </li>
+          <li className="p-8 w-full border border-t-0 border-x-0">
+            <Link href="#donate">Donate</Link>
+          </li>
         </ul>
       </nav>
     </>
