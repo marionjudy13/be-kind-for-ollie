@@ -30,6 +30,7 @@ export default function MobileNav({}: Props) {
               <BilFacebookCircle size="3em" />
             </a>
             <Link
+              onClick={toggleMenu}
               href="#contact"
               className="block bg-darkGreen text-mint button ml-4 font-sans font-bold"
             >
@@ -39,13 +40,19 @@ export default function MobileNav({}: Props) {
         </div>
         <ul className="flex flex-col items-center w-full text-center text-base font-bold">
           <li className="p-8 w-full border border-x-0">
-            <Link href="#about">About</Link>
+            <Link href="#about" onClick={toggleMenu}>
+              About
+            </Link>
           </li>
           <li className="p-8 w-full border border-t-0 border-x-0">
-            <Link href="#newsAndEvents">News & Events</Link>
+            <Link href="#newsAndEvents" onClick={toggleMenu}>
+              News & Events
+            </Link>
           </li>
           <li className="p-8 w-full border border-t-0 border-x-0">
-            <Link href="#donate">Donate</Link>
+            <Link href="#donate" onClick={toggleMenu}>
+              Donate
+            </Link>
           </li>
         </ul>
       </nav>
