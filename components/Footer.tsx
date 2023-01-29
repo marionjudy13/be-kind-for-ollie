@@ -6,7 +6,7 @@ type Props = {};
 function Footer({}: Props) {
   return (
     <footer className="bg-black padding text-white">
-      <div>
+      <div className="max-w-5xl">
         <div className="flex flex-col items-center  mb-12">
           <img
             src="/logo.svg"

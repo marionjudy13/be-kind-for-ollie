@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  .maxWidth {
+    @apply m-auto max-w-md md:max-w-2xl lg:max-w-3xl;
+  }
   .padding {
     @apply px-10  py-28 md:px-20;
   }
@@ -19,12 +22,35 @@
     @apply pt-28;
   }
   .h2 {
-    @apply text-3xl text-darkGreen font-serif text-center leading-tight mb-8;
+    @apply text-3xl text-darkGreen font-serif text-center leading-tight mb-6;
   }
   .p {
-    @apply text-xl text-center leading-[1.75];
+    @apply text-lg md:text-xl leading-[1.8] md:leading-[2] px-5 text-justify md:text-center;
   }
   .button {
-    @apply bg-mint text-darkGreen font-bold text-sm px-4 py-2 rounded-xl;
+    @apply bg-mint text-darkGreen font-bold text-sm px-4 md:px-6 py-2 md:py-3 rounded-xl;
   }
+  .label {
+    @apply w-full text-sm uppercase text-mint font-semibold  tracking-widest;
+  }
+  .input {
+    @apply w-full h-12;
+  }
+  .small {
+    @apply text-mint/75;
+  }
+  .card {
+    @apply flex flex-col w-full mb-12 relative;
+  }
+  .tag {
+    @apply absolute -left-6 top-8 md:top-12 after:block after:relative after:h-8 after:w-8 after:bottom-4 after:left-2 after:rotate-45 after:bg-lightGreen after:z-0;
+  }
+  .tagText {
+    @apply block relative px-5 md:px-12 pb-3 md:pb-5 pt-2 md:pt-4 rounded-tr-lg rounded-br-lg bg-mint z-20 font-serif text-darkGreen text-xl shadow;
+  }
+}
+
+.negMargin small {
+  position: relative;
+  top: -7px;
 }

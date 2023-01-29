@@ -8,7 +8,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="absolute w-full p-5 sm:px-10 md:px-20 md:py-10 text-mint  uppercase text-xs font-sans font-semibold">
+    <header className="absolute w-full p-5 sm:px-10 md:px-20 md:py-10 text-mint  uppercase text-xs md:text-sm font-sans font-semibold">
       <div className="flex justify-between items-center max-w-5xl m-auto">
         <MobileNav />
         <DesktopNav />
@@ -18,7 +18,7 @@ export default function Header({}: Props) {
           </a>
           <Link
             href="#contact"
-            className="block button ml-4 font-sans font-bold"
+            className="block button ml-4 md:ml-8 font-sans font-bold"
           >
             <span>Contact</span>
           </Link>
