@@ -22,7 +22,7 @@
     @apply pt-28;
   }
   .h2 {
-    @apply text-3xl text-darkGreen font-serif text-center leading-tight mb-6;
+    @apply text-3xl text-darkGreen font-serif text-center leading-tight mb-6 md:mb-10;
   }
   .p {
     @apply text-lg md:text-xl leading-[1.8] md:leading-[2] px-5 text-justify md:text-center;
@@ -40,7 +40,11 @@
     @apply text-mint/75;
   }
   .card {
-    @apply flex flex-col w-full mb-12 relative;
+    @apply flex flex-col w-full max-w-xs md:max-w-none mb-14 md:w-[45%] relative;
+  }
+
+  .card:last-child {
+    @apply grow mb-0;
   }
   .tag {
     @apply absolute -left-6 top-8 md:top-12 after:block after:relative after:h-8 after:w-8 after:bottom-4 after:left-2 after:rotate-45 after:bg-lightGreen after:z-0;

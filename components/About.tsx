@@ -5,7 +5,7 @@ type Props = {};
 export default function About({}: Props) {
   return (
     <section
-      className="bg-mint paddingX pt-40 md:pt-60 pb-28 md:pb-40"
+      className="bg-mint paddingX pt-40 md:pt-60 pb-28 md:pb-34"
       id="about"
     >
       <h2 className="h2">About our Organization</h2>

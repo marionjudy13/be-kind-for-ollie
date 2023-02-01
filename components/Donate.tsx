@@ -12,16 +12,16 @@ export default function Donate({}: Props) {
             "The Be Kind For Ollie Foundation is funded entirely through charitable donations, fund-raising programs, and grants. To donate online, please use one of the following services."
           }
         </p>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center m-auto max-w-[80%] md:justify-between">
           <img
             src="/paypal.jpg"
             alt="Placeholder Alt"
-            className="w-full h-auto mb-16"
+            className="w-full h-auto mb-16 md:mb-12 md:w-[40%]"
           />
           <img
             src="/venmo.jpg"
             alt="Placeholder Alt"
-            className="w-full h-auto mb-12"
+            className="w-full h-auto mb-12 md:w-[40%]"
           />
         </div>
         <p className="p text-white mb-12">
