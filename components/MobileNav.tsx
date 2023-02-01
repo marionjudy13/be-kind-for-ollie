@@ -26,31 +26,38 @@ export default function MobileNav({}: Props) {
         <div className="flex justify-between p-5">
           <MdcWindowClose size="3em" onClick={toggleMenu} />
           <div className="flex items-center">
-            <a href="https://www.facebook.com/profile.php?id=100072203140159">
+            <a
+              href="https://www.facebook.com/profile.php?id=100072203140159"
+              aria-label="Visit our Facebook Page"
+            >
               <BilFacebookCircle size="3em" />
             </a>
             <Link
               onClick={toggleMenu}
               href="#contact"
               className="block bg-darkGreen text-mint button ml-4 font-sans font-bold"
+              aria-label="Send us a Message"
             >
               <span>Contact</span>
             </Link>
           </div>
         </div>
-        <ul className="flex flex-col items-center w-full text-center text-base font-bold">
-          <li className="p-8 w-full border border-x-0">
-            <Link href="#about" onClick={toggleMenu}>
+        <ul
+          className="flex flex-col items-center w-full text-center text-base font-bold"
+          role="menu"
+        >
+          <li className="p-8 w-full border border-x-0" role="none">
+            <Link href="#about" onClick={toggleMenu} role="menuItem">
               About
             </Link>
           </li>
-          <li className="p-8 w-full border border-t-0 border-x-0">
-            <Link href="#newsAndEvents" onClick={toggleMenu}>
+          <li className="p-8 w-full border border-t-0 border-x-0" role="none">
+            <Link href="#newsAndEvents" onClick={toggleMenu} role="menuItem">
               News & Events
             </Link>
           </li>
-          <li className="p-8 w-full border border-t-0 border-x-0">
-            <Link href="#donate" onClick={toggleMenu}>
+          <li className="p-8 w-full border border-t-0 border-x-0" role="none">
+            <Link href="#donate" onClick={toggleMenu} role="menuItem">
               Donate
             </Link>
           </li>

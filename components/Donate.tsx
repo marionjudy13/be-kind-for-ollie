@@ -7,21 +7,21 @@ export default function Donate({}: Props) {
     <section className="bg-lightGreen padding" id="donate">
       <div className="maxWidth">
         <h2 className="h2 text-mint">How to Donate</h2>
-        <p className="p text-white mb-12">
+        <p className="p text-white mb-12 lg:mb-16">
           {
             "The Be Kind For Ollie Foundation is funded entirely through charitable donations, fund-raising programs, and grants. To donate online, please use one of the following services."
           }
         </p>
-        <div className="flex flex-wrap justify-center m-auto max-w-[80%] md:justify-between">
+        <div className="flex flex-wrap justify-center m-auto max-w-[80%] lg:max-w-[700px] md:justify-between">
           <img
             src="/paypal.jpg"
             alt="Placeholder Alt"
-            className="w-full h-auto mb-16 md:mb-12 md:w-[40%]"
+            className="w-full h-auto mb-16 md:mb-12 md:w-[40%] lg:w-[45%] lg:max-w-[300px] lg:mb-16"
           />
           <img
             src="/venmo.jpg"
             alt="Placeholder Alt"
-            className="w-full h-auto mb-12 md:w-[40%]"
+            className="w-full h-auto mb-12 md:w-[40%] lg:max-w-[300px] lg:w-[45%] lg:mb-16"
           />
         </div>
         <p className="p text-white mb-12">
