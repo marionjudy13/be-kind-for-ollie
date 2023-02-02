@@ -6,7 +6,6 @@ import {schemaTypes} from './schemas'
 export default defineConfig({
   name: 'default',
   title: 'Be Kind for Ollie',
-
   projectId: 'ho94ql35',
   dataset: 'production',
 
