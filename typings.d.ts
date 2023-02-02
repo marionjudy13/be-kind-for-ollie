@@ -1,0 +1,28 @@
+import { Url } from "url";
+
+interface SanityBody {
+  _createdAt: string;
+  _id: string;
+  _rev: string;
+  _updatedAt: string;
+}
+interface Image {
+  _type: "image";
+  asset: {
+    _ref: string;
+    _type: "reference";
+  };
+}
+
+export interface NewsAndEvents extends SanityBody {
+  _type: "newsAndEvents";
+  title: string;
+  url: Url;
+  image: Image;
+}
+
+export interface AboutContent extends SanityBody {
+  _type: "aboutContent";
+  header: string;
+  paragraph: string;
+}

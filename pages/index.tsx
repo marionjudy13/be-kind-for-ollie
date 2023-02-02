@@ -1,3 +1,4 @@
+import type { GetStaticProps } from "next";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -6,10 +7,14 @@ import NewsAndEvents from "@/components/NewsAndEvents";
 import Donate from "@/components/Donate";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { fetchAboutContent } from "@/utils/fetchAboutContent";
+import { AboutContent } from "@/typings";
 
-type Props = {};
+type Props = {
+  aboutContent: AboutContent;
+};
 
-export default function Home() {
+export default function Home({ aboutContent }: Props) {
   return (
     <>
       <Head>
@@ -35,3 +40,14 @@ export default function Home() {
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const aboutContent: AboutContent = await fetchAboutContent();
+
+  return {
+    props: {
+      aboutContent,
+    },
+    revalidate: 10,
+  };
+};
