@@ -17,6 +17,8 @@ interface Image {
 export interface NewsAndEvents extends SanityBody {
   _type: "newsAndEvents";
   title: string;
+  date: string;
+  time: string;
   url: Url;
   image: Image;
 }

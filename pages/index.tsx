@@ -1,20 +1,20 @@
-import type { GetStaticProps } from "next";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Head from "next/head";
-import NewsAndEvents from "@/components/NewsAndEvents";
+import NewsAndEventsSection from "@/components/NewsAndEvents";
 import Donate from "@/components/Donate";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { fetchAboutContent } from "@/utils/fetchAboutContent";
-import { AboutContent } from "@/typings";
+import { AboutContent, NewsAndEvents } from "@/typings";
 
 type Props = {
   aboutContent: AboutContent;
+  newsAndEvents: NewsAndEvents;
 };
 
-export default function Home({ aboutContent }: Props) {
+export default function Home({ aboutContent, newsAndEvents }: Props) {
   return (
     <>
       <Head>
@@ -28,9 +28,10 @@ export default function Home({ aboutContent }: Props) {
       {/* Hero */}
       <Hero />
       {/* About */}
-      <About />
+      <About {...aboutContent} />
+      {console.log(aboutContent)}
       {/* News & Events */}
-      <NewsAndEvents />
+      <NewsAndEventsSection />
       {/* How to Donate */}
       <Donate />
       {/* Contact Us */}
@@ -41,12 +42,14 @@ export default function Home({ aboutContent }: Props) {
   );
 }
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+export const getStaticProps = async () => {
   const aboutContent: AboutContent = await fetchAboutContent();
+  // const newsAndEvents: NewsAndEvents = await fetchNewsAndEvents();
 
   return {
     props: {
       aboutContent,
+      // newsAndEvents,
     },
     revalidate: 10,
   };

@@ -1,8 +1,7 @@
 import React from "react";
+import { AboutContent } from "@/typings";
 
-type Props = {};
-
-export default function About({}: Props) {
+export default function About({}: AboutContent) {
   return (
     <section
       className="bg-mint paddingX pt-40 md:pt-60 pb-28 md:pb-34 lg:padding"

@@ -1,3 +1,4 @@
 import aboutContent from './aboutContent'
+import newsAndEvents from './newsAndEvents'
 
-export const schemaTypes = [aboutContent]
+export const schemaTypes = [aboutContent, newsAndEvents]
