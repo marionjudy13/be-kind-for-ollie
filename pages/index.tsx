@@ -2,16 +2,17 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Head from "next/head";
-import NewsAndEventsSection from "@/components/NewsAndEvents";
+import NewsAndEvents from "@/components/NewsAndEvents";
 import Donate from "@/components/Donate";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { fetchAboutContent } from "@/utils/fetchAboutContent";
-import { AboutContent, NewsAndEvents } from "@/typings";
+import { fetchNewsAndEventsContent } from "@/utils/fetchNewsAndEvents";
+import { AboutContent, NewsAndEventsContent } from "@/typings";
 
 type Props = {
   aboutContent: AboutContent;
-  newsAndEvents: NewsAndEvents;
+  newsAndEvents: NewsAndEventsContent;
 };
 
 export default function Home({ aboutContent, newsAndEvents }: Props) {
@@ -29,9 +30,9 @@ export default function Home({ aboutContent, newsAndEvents }: Props) {
       <Hero />
       {/* About */}
       <About {...aboutContent} />
-      {console.log(aboutContent)}
+      {console.log(newsAndEvents)}
       {/* News & Events */}
-      <NewsAndEventsSection />
+      <NewsAndEvents {...newsAndEvents} />
       {/* How to Donate */}
       <Donate />
       {/* Contact Us */}
@@ -44,12 +45,12 @@ export default function Home({ aboutContent, newsAndEvents }: Props) {
 
 export const getStaticProps = async () => {
   const aboutContent: AboutContent = await fetchAboutContent();
-  // const newsAndEvents: NewsAndEvents = await fetchNewsAndEvents();
+  const newsAndEvents: NewsAndEventsContent = await fetchNewsAndEventsContent();
 
   return {
     props: {
       aboutContent,
-      // newsAndEvents,
+      newsAndEvents,
     },
     revalidate: 10,
   };

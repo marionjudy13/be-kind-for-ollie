@@ -14,7 +14,7 @@ interface Image {
   };
 }
 
-export interface NewsAndEvents extends SanityBody {
+export interface NewsAndEventsContent extends SanityBody {
   _type: "newsAndEvents";
   title: string;
   date: string;
