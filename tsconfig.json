@@ -19,6 +19,12 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "cms/sanity.config.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "cms/sanity.config.js",
+    "cms/tailwind.config.js"
+  ],
   "exclude": ["node_modules"]
 }

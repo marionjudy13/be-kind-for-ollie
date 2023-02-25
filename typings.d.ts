@@ -17,10 +17,11 @@ interface Image {
 export interface NewsAndEventsContent extends SanityBody {
   _type: "newsAndEvents";
   title: string;
-  date: string;
-  time: string;
+  date?: string;
+  time?: string;
   url: Url;
   image: Image;
+  isNews?: boolean;
 }
 
 export interface AboutContent extends SanityBody {

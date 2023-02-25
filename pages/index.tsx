@@ -12,7 +12,7 @@ import { AboutContent, NewsAndEventsContent } from "@/typings";
 
 type Props = {
   aboutContent: AboutContent;
-  newsAndEvents: NewsAndEventsContent;
+  newsAndEvents: NewsAndEventsContent[];
 };
 
 export default function Home({ aboutContent, newsAndEvents }: Props) {
@@ -31,7 +31,7 @@ export default function Home({ aboutContent, newsAndEvents }: Props) {
       {/* About */}
       <About {...aboutContent} />
       {/* News & Events */}
-      <NewsAndEvents {...newsAndEvents} />
+      <NewsAndEvents newsAndEvents={newsAndEvents} />
       {/* How to Donate */}
       <Donate />
       {/* Contact Us */}

@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["botcheck", "groq", "tailwindcss"]
+  "cSpell.words": ["botcheck", "groq", "tailwindcss"],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

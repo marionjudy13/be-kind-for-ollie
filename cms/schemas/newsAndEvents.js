@@ -4,7 +4,7 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'Title',
+      name: 'title',
       title: 'Title',
       type: 'string',
     },
@@ -30,6 +30,12 @@ export default {
       name: 'url',
       title: 'Event URL',
       type: 'url',
+    },
+    {
+      name: 'isNews',
+      title: 'Event Type',
+      type: 'boolean',
+      description: 'Toggle if news.',
     },
   ],
 }

@@ -1,9 +1,11 @@
+// This function is reaching out to sanity's api to get the content
+
 import type { NextApiRequest, NextApiResponse } from "next";
 import { groq } from "next-sanity";
 import { sanityClient } from "../../sanity";
 import { AboutContent } from "../../typings";
 
-const query = groq`*[_type == "aboutContent"]`;
+const query = groq`*[_type == "aboutContent"][0]`;
 
 type Data = {
   aboutContent: AboutContent;

@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["**/*.ts", "**/*.tsx", "schemas/index.js", "sanity.config.js"],
+  "include": ["**/*.ts", "**/*.tsx", "schemas/index.js", "sanity.config.js", "tailwind.config.js"],
   "exclude": ["node_modules"]
 }
