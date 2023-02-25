@@ -30,7 +30,6 @@ export default function Home({ aboutContent, newsAndEvents }: Props) {
       <Hero />
       {/* About */}
       <About {...aboutContent} />
-      {console.log(newsAndEvents)}
       {/* News & Events */}
       <NewsAndEvents {...newsAndEvents} />
       {/* How to Donate */}

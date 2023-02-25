@@ -24,7 +24,7 @@ export default function Hero({}: Props) {
         <div className="relative -mb-24 md:-mb-40 lg:mb-0 lg:w-1/2">
           <span className="background">
             <img
-              src="/oliver.jpg"
+              src="/oliver.webp"
               alt="Photo of Oliver Dill"
               className="relative z-10 border-8 border-mint lg:h-full lg:w-full lg:min-w-full lg:border-none"
             />
