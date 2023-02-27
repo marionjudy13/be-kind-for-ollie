@@ -4,6 +4,12 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'order',
+      title: 'Order',
+      type: 'number',
+      description: 'What order do you want the event to show on the page?',
+    },
+    {
       name: 'title',
       title: 'Title',
       type: 'string',

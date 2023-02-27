@@ -1,15 +1,21 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Image from "next/image";
-import eventPic from "../public/cat.jpg";
+import imageUrlBuilder from "@sanity/image-url";
+import { sanityClient } from "../sanity";
 import { NewsAndEventsContent } from "@/typings";
 import dayjs from "dayjs";
+
+const builder = imageUrlBuilder(sanityClient);
+
+function urlFor(source: any) {
+  return builder.image(source);
+}
 
 export default function NewsAndEventsSection({
   newsAndEvents,
 }: {
   newsAndEvents: NewsAndEventsContent[];
 }) {
-  console.log(newsAndEvents);
   return (
     <section className="bg-paleGreen padding" id="newsAndEvents">
       <h2 className="h2 text-darkGreen mb-14 lg:mb-20">News &amp; Events</h2>
@@ -17,16 +23,22 @@ export default function NewsAndEventsSection({
         {newsAndEvents.map((event) => (
           <div key={event._id} className="card">
             <div className="tag">
-              <span className="tagText">Event Tag</span>
+              {event.isNews ? (
+                <span className="tagText">News</span>
+              ) : (
+                <span className="tagText">Event</span>
+              )}
             </div>
-            <div className="relative h-[275px] lg:h-[350px] mb-4">
-              <Image
-                src={eventPic}
-                alt="Placeholder Alt"
-                fill
-                style={{ objectFit: "cover", objectPosition: "" }}
-              />
-            </div>
+            <div
+              className="relative h-[275px] lg:h-[350px] mb-4"
+              style={{
+                backgroundImage: `url('${urlFor(event.image)
+                  .height(400)
+                  .fit("fill")}')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            />
             <h3 className="text-xl text-darkGreen font-bold">{event.title}</h3>
             <p className="text-lightGreen mb-2">
               {dayjs(event.date).format("MMMM D, YYYY")}
