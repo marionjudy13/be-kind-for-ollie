@@ -24,7 +24,8 @@
     "**/*.ts",
     "**/*.tsx",
     "cms/sanity.config.js",
-    "cms/tailwind.config.js"
+    "cms/tailwind.config.js",
+    "components/Form.js"
   ],
   "exclude": ["node_modules"]
 }

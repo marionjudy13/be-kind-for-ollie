@@ -1,4 +1,5 @@
 import React from "react";
+import Form from "./Form";
 
 type Props = {};
 
@@ -10,10 +11,7 @@ function Contact({}: Props) {
         We would love to hear from you. We will respond to your message as soon
         as possible.
       </p>
-      <form className="p text-white">
-        Form Goes Here
-        <button className="block m-auto button mt-12">Send Message</button>
-      </form>
+      <Form />
     </section>
   );
 }
