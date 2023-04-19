@@ -6,9 +6,8 @@ import NewsAndEvents from "@/components/NewsAndEvents";
 import Donate from "@/components/Donate";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { fetchAboutContent } from "@/utils/fetchAboutContent";
-import { fetchNewsAndEventsContent } from "@/utils/fetchNewsAndEvents";
 import { AboutContent, NewsAndEventsContent } from "@/typings";
+import { sanityClient } from "@/sanity";
 
 type Props = {
   aboutContent: AboutContent;
@@ -43,13 +42,17 @@ export default function Home({ aboutContent, newsAndEvents }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const aboutContent: AboutContent = await fetchAboutContent();
-  const newsAndEvents: NewsAndEventsContent = await fetchNewsAndEventsContent();
+  const data: any = await sanityClient.fetch(`{
+    "aboutContent": *[_type == "aboutContent"][0],
+    "newsAndEvents": *[_type == "newsAndEvents"]
+  }`);
+
+  console.log({ data });
 
   return {
     props: {
-      aboutContent,
-      newsAndEvents,
+      aboutContent: data.aboutContent,
+      newsAndEvents: data.newsAndEvents,
     },
     revalidate: 10,
   };
