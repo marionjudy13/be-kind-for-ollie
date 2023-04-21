@@ -20,7 +20,7 @@ export interface NewsAndEventsContent extends SanityBody {
   title: string;
   date?: string;
   time?: string;
-  url: Url;
+  url: string;
   image: Image;
   isNews?: boolean;
 }

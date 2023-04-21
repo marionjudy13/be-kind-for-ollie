@@ -9,26 +9,38 @@ function DesktopNav({}: Props) {
       <nav className="hidden sm:block">
         <ul className="flex" role="menu">
           <li
-            className="pr-16 transition-colors ease-in-out hover:text-white duration-400"
+            className="group pr-16 transition-colors ease-in-out hover:text-white duration-500"
             role="none"
           >
-            <Link href="#about" role="menuItem">
+            <Link
+              href="#about"
+              role="menuItem"
+              className="pb-2 border-b-2 border-darkGreen group-hover:border-white ease-in-out duration-500"
+            >
               About
             </Link>
           </li>
           <li
-            className="pr-16 transition-colors ease-in-out hover:text-white duration-400"
+            className="group pr-16 transition-colors ease-in-out hover:text-white duration-500"
             role="none"
           >
-            <Link href="#newsAndEvents" role="menuItem">
+            <Link
+              href="#newsAndEvents"
+              role="menuItem"
+              className="pb-2 border-b-2 border-darkGreen group-hover:border-white ease-in-out duration-500"
+            >
               News & Events
             </Link>
           </li>
           <li
-            className="transition-colors ease-in-out hover:text-white duration-400"
+            className="group transition-colors ease-in-out hover:text-white duration-500"
             role="none"
           >
-            <Link href="#donate" role="menuItem">
+            <Link
+              href="#donate"
+              role="menuItem"
+              className="pb-2 border-b-2 border-darkGreen group-hover:border-white ease-in-out duration-500"
+            >
               Donate
             </Link>
           </li>

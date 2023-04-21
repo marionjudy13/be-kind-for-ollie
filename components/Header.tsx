@@ -12,16 +12,17 @@ export default function Header({}: Props) {
       <div className="flex justify-between items-center max-w-5xl m-auto">
         <MobileNav />
         <DesktopNav />
-        <div className="flex items-center  transition-colors ease-in-out hover:text-white duration-400">
+        <div className="flex items-center">
           <a
             href="https://www.facebook.com/profile.php?id=100072203140159"
             aria-label="Visit our Facebook Page"
+            className="transition-colors ease-in-out hover:text-white duration-500"
           >
             <BilFacebookCircle size="3em" />
           </a>
           <Link
             href="#contact"
-            className="block button ml-4 md:ml-8 font-sans font-bold transition-colors ease-in-out hover:bg-white duration-400"
+            className="block button ml-4 md:ml-8 font-sans font-bold transition-colors ease-in-out hover:bg-white duration-500"
             aria-label="Send us a Message"
           >
             <span>Contact</span>

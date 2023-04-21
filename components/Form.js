@@ -54,49 +54,52 @@ export default function Contact() {
           {...register("botcheck")}
         ></input>
 
-        <div className="md:w-1/2 md:pr-4">
+        <div className="md:w-1/2 md:pr-4 relative">
           <label htmlFor="firstName" className="label">
             First Name
           </label>
           <input
             type="text"
             autoComplete="false"
-            className={`contactInput ${errors.name ? "error" : "no-error"}`}
-            {...register("first-name", {
+            className={`contactInput ${
+              errors.firstName ? "error" : "no-error"
+            }`}
+            {...register("firstName", {
               required: "First name is required",
               maxLength: 80,
             })}
           />
-          {errors.name && (
-            <div>
-              <small>{errors.name.message}</small>
+          {errors.firstName && (
+            <div className="text-yellow font-semibold uppercase absolute bottom-3 text-xs tracking-wider">
+              <small>{errors.firstName.message}</small>
             </div>
           )}
         </div>
-        <div className="md:w-1/2 md:pl-4">
+
+        <div className="md:w-1/2 md:pl-4 relative">
           <label htmlFor="lastName" className="label">
             Last Name
           </label>
           <input
             type="text"
             autoComplete="false"
-            className={`contactInput ${errors.name ? "error" : "no-error"}`}
-            {...register("last-name", {
+            className={`contactInput ${errors.lastName ? "error" : "no-error"}`}
+            {...register("lastName", {
               required: "Last name is required",
               maxLength: 80,
             })}
           />
-          {errors.name && (
-            <div>
-              <small>{errors.name.message}</small>
+          {errors.lastName && (
+            <div className="text-yellow font-semibold uppercase absolute bottom-3 text-xs tracking-wider">
+              <small className="text-mintGreen">
+                {errors.lastName.message}
+              </small>
             </div>
           )}
         </div>
       </div>
 
-      {/* old form */}
-      {/* End old form */}
-      <div className="md:flex flex-wrap">
+      <div className="md:flex flex-wrap relative">
         <div className="w-full">
           <label htmlFor="email" className="label">
             Email Address
@@ -116,14 +119,14 @@ export default function Contact() {
             })}
           />
           {errors.email && (
-            <div>
+            <div className="text-yellow font-semibold uppercase absolute  bottom-3 text-xs tracking-wider">
               <small>{errors.email.message}</small>
             </div>
           )}
         </div>
       </div>
 
-      <div>
+      <div className="relative">
         <label htmlFor="message" className="label">
           Message
         </label>
@@ -137,8 +140,7 @@ export default function Contact() {
           })}
         />
         {errors.message && (
-          <div>
-            {" "}
+          <div className="text-yellow font-semibold uppercase absolute bottom-[35px] text-xs tracking-wider">
             <small>{errors.message.message}</small>
           </div>
         )}
@@ -160,10 +162,14 @@ export default function Contact() {
         )}
       </button>
       {isSubmitSuccessful && isSuccess && (
-        <div>{message || "Success. Message sent successfully"}</div>
+        <div className="text-mint text-sm font-semibold uppercase text-center mt-5">
+          {message || "Success. Message sent successfully"}
+        </div>
       )}
       {isSubmitSuccessful && !isSuccess && (
-        <div>{message || "Something went wrong. Please try later."}</div>
+        <div className="text-yellow font-semibold uppercase text-center mt-5">
+          {message || "Something went wrong. Please try later."}
+        </div>
       )}
     </form>
   );
