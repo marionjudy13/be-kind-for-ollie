@@ -17,6 +17,8 @@ export default function Header({}: Props) {
             href="https://www.facebook.com/profile.php?id=100072203140159"
             aria-label="Visit our Facebook Page"
             className="transition-colors ease-in-out hover:text-white duration-500"
+            target="_blank"
+            rel="noreferrer"
           >
             <BilFacebookCircle size="3em" />
           </a>

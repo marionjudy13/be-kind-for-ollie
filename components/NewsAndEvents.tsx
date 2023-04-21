@@ -24,6 +24,8 @@ export default function NewsAndEventsSection({
           <div key={event._id} className="card group">
             <a
               href={event.url}
+              target="_blank"
+              rel="noreferrer"
               className="ease-in-out duration-300 md:group-hover:scale-[103%] transform-gpu"
             >
               <div className="tag">

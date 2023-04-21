@@ -43,6 +43,8 @@ function Footer({}: Props) {
             href="https://www.facebook.com/profile.php?id=100072203140159"
             className="text-mint transition-colors ease-in-out hover:text-white duration-400"
             aria-label="Visit our Facebook Page"
+            target="_blank"
+            rel="noreferrer"
           >
             <BilFacebookCircle size="3em" className="m-auto" />
           </a>
