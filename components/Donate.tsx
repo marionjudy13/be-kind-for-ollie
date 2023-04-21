@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 type Props = {};
@@ -9,15 +10,22 @@ export default function Donate({}: Props) {
         <h2 className="h2 text-mint">How to Donate</h2>
         <p className="p text-white mb-12 lg:mb-16">
           {
-            "The Be Kind For Ollie Foundation is funded entirely through charitable donations, fund-raising programs, and grants. To donate online, please use one of the following services."
+            "The Be Kind For Ollie Foundation is funded entirely through charitable donations, fund-raising programs, and grants. To donate online, please use our Venmo account."
           }
         </p>
         <div className="flex flex-wrap justify-center m-auto max-w-[80%] lg:max-w-[700px]">
-          <img
-            src="/bekind-venmo.jpg"
-            alt="Placeholder Alt"
-            className="w-full h-auto mb-12 md:w-[40%] lg:max-w-[250px] lg:w-[45%] lg:mb-16"
-          />
+          <a
+            href="https://account.venmo.com/u/bekindforollie"
+            target="_blank"
+            rel="noreferrer"
+            className="w-full hover:scale-105 ease-in-out duration-300"
+          >
+            <img
+              src="/bekind-venmo.jpg"
+              alt="Placeholder Alt"
+              className="w-full h-auto m-auto md:w-[40%] lg:max-w-[250px] lg:w-[45%] lg:mb-16"
+            />
+          </a>
         </div>
         <p className="p text-white mb-12">
           {
