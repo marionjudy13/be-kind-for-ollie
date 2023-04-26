@@ -19,21 +19,21 @@ function Footer({}: Props) {
             </h4>
             <div className="font-semibold leading-relaxed text-mint tracking-wider text-center lg:text-left lg:text-sm">
               <p className="mb-4 tracking-wider">
-                123 Address Lane <br />
-                Evansville, IN 12345 <br />
+                2206 West Summit Drive <br />
+                Evansville, Indiana 47712 <br />
               </p>
               <a
-                href="tel:+7602139494"
+                href="tel:+8122047377"
                 className="tracking-wider transition-colors ease-in-out hover:text-white duration-400"
               >
-                (812)111-1111
+                (812) 204-7377
               </a>{" "}
               <br />
               <a
                 className="tracking-wider transition-colors ease-in-out hover:text-white duration-400"
                 href="mailto:marionejudy@gmail.com"
               >
-                email@email.com
+                jldill925@gmail.com
               </a>
             </div>
           </div>

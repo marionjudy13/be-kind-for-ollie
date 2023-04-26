@@ -18,12 +18,12 @@ export default function Donate({}: Props) {
             href="https://account.venmo.com/u/bekindforollie"
             target="_blank"
             rel="noreferrer"
-            className="w-full hover:scale-105 ease-in-out duration-300"
+            className="w-full md:hover:scale-105 ease-in-out duration-300"
           >
             <img
               src="/bekind-venmo.jpg"
               alt="Placeholder Alt"
-              className="w-full h-auto m-auto md:w-[40%] lg:max-w-[250px] lg:w-[45%] lg:mb-16"
+              className="w-full h-auto m-auto w-[50%] md:w-[40%] lg:max-w-[250px] lg:w-[45%] mb-12 md:mb-16"
             />
           </a>
         </div>
@@ -35,9 +35,9 @@ export default function Donate({}: Props) {
         <p className="p font-semibold text-white">
           Be Kind For Ollie Foundation
           <br />
-          123 Address Lane
+          2206 W Summit Drive
           <br />
-          Evansville, IN 12345
+          Evansville, IN 47712
         </p>
       </div>
     </section>
