@@ -33,7 +33,7 @@ function Footer({}: Props) {
                 className="tracking-wider transition-colors ease-in-out hover:text-white duration-400"
                 href="mailto:marionejudy@gmail.com"
               >
-                jldill925@gmail.com
+                BeKindforOllie@gmail.com
               </a>
             </div>
           </div>

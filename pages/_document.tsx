@@ -15,6 +15,17 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
           rel="stylesheet"
         />
+        <meta property="og:url" content="https://www.bekindforollie.com/" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Be Kind for Ollie"
+        />
+        <meta
+          property="og:description"
+          content="Be Kind For Ollie"
+        />
+        <meta property="og:image" content="/homepage.webp" />
       </Head>
       <body className="bg-darkGreen">
         <Main />
